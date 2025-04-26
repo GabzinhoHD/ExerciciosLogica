@@ -1,2 +1,2 @@
-# Repositorio Unico para Atividades
-Ele e dividido por branchs, com cada um tendo um conjunto de atividades de logica de programação.
+# Repositorio criado para os exercicios de logica de progrmação(ADS 1ºSemestre)
+interiormente divido por breanchs, agora divido por pasta de lista de exercicios.
