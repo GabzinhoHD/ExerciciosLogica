@@ -26,7 +26,7 @@ int main()
                 numF++;
             }
             
-            /*Comparação determinada pelo peso*/
+            /*Comparação determinada pela idade*/
             if(idade > maiorI){
                 maiorI = idade;
             }
