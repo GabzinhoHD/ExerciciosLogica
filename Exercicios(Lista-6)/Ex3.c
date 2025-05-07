@@ -10,17 +10,18 @@ int main()
     while(i <= 10){
         printf("Informe o sexo(F/M): ");
         scanf(" %c", &sexo);
+        sexo = toupper(sexo);
         
-        if(toupper(sexo) == 'M' || toupper(sexo) == 'F'){
+        if(sexo == 'M' || sexo == 'F'){
             
             printf("Informe a idade: ");
             scanf(" %d", &idade);
         
             /* Comparação determinada por sexo*/
-            if(toupper(sexo) == 'M'){
+            if(sexo == 'M'){
                 numM++;
             }
-            else if(toupper(sexo) == 'F'){;
+            else if(sexo == 'F'){;
                 soma = soma + idade;
                 numF++;
             }
