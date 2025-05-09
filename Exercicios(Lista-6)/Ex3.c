@@ -3,27 +3,27 @@
 
 int main()
 {
-    int i = 1, numM = 0, numF = 0, soma = 0, maiorI = 0, menorI, idade;
+    int i = 1, numH = 0, numM = 0, soma = 0, maiorI, menorI, idade;
     float media;
-    char sexo;
+    char valorG;
     
     while(i <= 10){
-        printf("Informe o sexo(F/M): ");
-        scanf(" %c", &sexo);
-        sexo = toupper(sexo);
+        printf("Informe o genero(H/M): ");
+        scanf(" %c", &valorG);
+        valorG = toupper(valorG);
         
-        if(sexo == 'M' || sexo == 'F'){
+        if(valorG == 'M' || valorG == 'H'){
             
             printf("Informe a idade: ");
             scanf(" %d", &idade);
         
             /* Comparação determinada por sexo*/
-            if(sexo == 'M'){
-                numM++;
+            if(valorG == 'H'){
+                numH++;
             }
-            else if(sexo == 'F'){;
+            else if(valorG == 'M'){;
                 soma = soma + idade;
-                numF++;
+                numM++;
             }
             
             /*Comparação determinada pela idade*/
@@ -39,15 +39,15 @@ int main()
          i++;
         }
         else{
-            printf("Sexo Indefinido!!\n");
+            printf("Genero Indefinido!!\n");
         }
     }
     
-    media = soma / numF;
+    media = soma / numM;
     
     printf("A maior idade do grupo é %d!!\nA menor idade do grupo é %d!!\n", maiorI, menorI);
     printf("A media das idades das mulheres no grupo é: %.2f!!\n", media);
-    printf("Existem %d homens no grupo !!", numM);
+    printf("Existem %d homens no grupo !!", numH);
     
     return 0;
 }
