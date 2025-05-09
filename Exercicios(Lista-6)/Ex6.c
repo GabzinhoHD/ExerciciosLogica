@@ -15,7 +15,7 @@ int main()
        printf("Entre com a nota B: ");
        scanf("%f", &notaB);
        
-       media = (notaA + (notaB * 2)) / 2;
+       media = (notaA + (notaB * 2)) / 3;
        printf("Media do aluno %d = %.1f\n", i, media);
         
        /*Laço para continuação*/
