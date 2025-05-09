@@ -39,9 +39,9 @@ int main()
     perF = (float)numF / i *100;
     
     printf("Total de Entrevistados: %d\n", i);
-    printf("Torcedores do Atletico: %d, Percentual: %.1f\n", numA, perA);
-    printf("Torcedores do Coritiba: %d, Percentual: %.1f\n", numC, perC);
-    printf("Torcedores do Foz     : %d, Percentual: %.1f\n", numF, perF);
+    printf("Torcedores do Atletico: %d, Percentual: %.1f%%\n", numA, perA);
+    printf("Torcedores do Coritiba: %d, Percentual: %.1f%%\n", numC, perC);
+    printf("Torcedores do Foz     : %d, Percentual: %.1f%%\n", numF, perF);
 
     return 0;
 }
