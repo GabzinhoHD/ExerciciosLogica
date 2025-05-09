@@ -17,7 +17,8 @@ int main()
        
        media = (notaA + (notaB * 2)) / 2;
        printf("Media do aluno %d = %.1f\n", i, media);
-       
+        
+       /*Laço para continuação*/
        do{
            printf("Continuar?(S/N): ");
            scanf(" %c", &continua);
