@@ -60,9 +60,12 @@ int main()
             printf("Entrada Invalida!!\n");
         }
 
-    }while(i <= 2);
+    }while(i <= 50);
     
-    printf("---RESULTADO---");
+    printf("---RESULTADO---\n");
+    printf("A menor idade do grupo: %d\n", menorI);
+    printf("Pessoas do sexo masculino entre 16 a 24 anos, com olhos azuis e cabelo castanho: %d\n",quantM);
+    printf("Pessoas do sexo feminino com menos de 40 anos, com olhos e cabelo preto: %d\n", quantF);
 
     return 0;
 }
