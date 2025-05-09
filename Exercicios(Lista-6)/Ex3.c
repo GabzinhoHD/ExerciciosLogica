@@ -27,14 +27,16 @@ int main()
             }
             
             /*Comparação determinada pela idade*/
-            if(idade > maiorI){
-                maiorI = idade;
-            }
-            else{
-                menorI = idade;
+            if (i == 1) {
+            maiorI = idade;
+            menorI = idade;
+            } 
+            else {
+                if (idade > maiorI) maiorI = idade;
+                if (idade < menorI) menorI = idade;
             }
             
-            i++;
+         i++;
         }
         else{
             printf("Sexo Indefinido!!\n");
@@ -43,7 +45,7 @@ int main()
     
     media = soma / numF;
     
-    printf("A maior idade do grupo é %d.\nA menor idade do grupo é %d!!\n", maiorI, menorI);
+    printf("A maior idade do grupo é %d!!\nA menor idade do grupo é %d!!\n", maiorI, menorI);
     printf("A media das idades das mulheres no grupo é: %.2f!!\n", media);
     printf("Existem %d homens no grupo !!", numM);
     
