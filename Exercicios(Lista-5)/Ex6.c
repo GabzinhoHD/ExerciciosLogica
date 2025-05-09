@@ -17,7 +17,7 @@ int main()
     }
     
     if(quantNum > 0){
-        media = soma / quantNum;
+        media = (float)soma / quantNum;
         printf("A media é: %f", media);
     }
     else{
