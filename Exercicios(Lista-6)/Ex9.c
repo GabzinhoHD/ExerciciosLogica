@@ -6,21 +6,28 @@ int main()
     int i = 1, quantM = 0, quantF = 0, idade, menorI;
     char sexo, olhos, cabelos;
     
-    do{
-        printf("Pessoa %d responda a pesquisa:\n", i);
-        printf("Informe seu sexo(M/F): ");
-        scanf(" %c", &sexo);
+    do{ 
+        while(sexo != 'M' && sexo != 'F'){
+            printf("Pessoa %d responda a pesquisa:\n", i);
+            printf("Informe seu sexo(M/F): ");
+            scanf(" %c", &sexo);
+            sexo = toupper(sexo);
+            if(sexo != 'M' && sexo != 'F' ){
+                printf("Entrada Invalida!!\n");
+                
+            }
+        }
+
+        while(idade <= 0){   
+            printf("Informe sua idade: ");
+            scanf(" %d", &idade);
+            if(idade <= 0){
+                printf("Entrada Invalida!!\n");
+            }
+        }
         
-        sexo = toupper(sexo);
-        if(sexo == 'M' || sexo == 'F'){
-            
-            do{
-                printf("Informe sua idade: ");
-                scanf(" %d", &idade);
-            }while(idade <= 0);
-            
-            /*Menu cor olhos*/
-            do{
+        /*Menu cor olhos*/
+        while(olhos != 'A' && olhos != 'V' && olhos != 'P' && olhos != 'C') {  
             printf("Informe a cor do seus olhos:\n");
             printf("[A] - Azuis\n");
             printf("[C] - Castanhos\n");
@@ -28,17 +35,23 @@ int main()
             printf("[V] - Verdes\n");
             scanf(" %c", &olhos);
             olhos = toupper(olhos);
-            }while(olhos != 'A' && olhos != 'V' && olhos != 'P' && olhos != 'C');
+            if(olhos != 'A' && olhos != 'V' && olhos != 'P' && olhos != 'C') {
+                printf("Entrada Invalida!!\n");
+            }
+        }
             
-            /*Menu cor cabelos*/
-            do{
+        /*Menu cor cabelos*/
+        while(cabelos != 'L' && cabelos != 'C' && cabelos != 'P'){    
             printf("Informe a cor do seus cabelos:\n");
             printf("[C] - Castanhos\n");
             printf("[L] - Loiros\n");
             printf("[P] - Pretos\n");
             scanf(" %c", &cabelos);
             cabelos = toupper(cabelos);
-            }while(cabelos != 'L' && cabelos != 'C' && cabelos != 'P');
+            if(cabelos != 'L' && cabelos != 'C' && cabelos != 'P'){
+                printf("Entrada Invalida!!\n");
+            }
+        }
          
             /*Determinação da menor idade*/
             if(i == 1) menorI = idade;
@@ -53,13 +66,7 @@ int main()
             else if(sexo == 'F' && idade < 40 && olhos == 'P' && cabelos == 'P') {
                 quantF++;
             }
-            i++; 
-        }
-        
-        else{
-            printf("Entrada Invalida!!\n");
-        }
-
+            i++;
     }while(i <= 50);
     
     printf("---RESULTADO---\n");
