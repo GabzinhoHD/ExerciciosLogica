@@ -34,9 +34,9 @@ int main()
     }while(torce != 'S');
     i--;
     
-    perA = (float)numA / i;
-    perC = (float)numC / i;
-    perF = (float)numF / i;
+    perA = (float)numA / i *100;
+    perC = (float)numC / i *100;
+    perF = (float)numF / i *100;
     
     printf("Total de Entrevistados: %d\n", i);
     printf("Torcedores do Atletico: %d, Percentual: %.1f\n", numA, perA);
