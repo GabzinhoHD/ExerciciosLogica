@@ -43,7 +43,7 @@ int main()
         }
     }
     
-    media = soma / numM;
+    media = (float)soma / numM;
     
     printf("A maior idade do grupo é %d!!\nA menor idade do grupo é %d!!\n", maiorI, menorI);
     printf("A media das idades das mulheres no grupo é: %.2f!!\n", media);
