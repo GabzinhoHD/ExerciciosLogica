@@ -16,6 +16,9 @@ int main()
         }
         
     }
+    else{
+        printf("Valor Final menor que o Inicial!!\n");
+    }
 
     return 0;
 }
