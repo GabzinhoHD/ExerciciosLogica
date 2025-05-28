@@ -10,7 +10,7 @@ int main()
         if((vetorA[i] % 2) == 0){
             vetorB[i] = vetorA[i] * 5;
         }
-        else if((vetorA[i] %2) != 0){
+        else if((vetorA[i] % 2) != 0){
             vetorB[i] = vetorA[i] + 5;
         }
     }
