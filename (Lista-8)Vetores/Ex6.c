@@ -21,7 +21,8 @@ int main()
         
         }while(vetorV[i] < 0);
     }
-    
+
+    printf("\n---RESULTADO---\n");
     printf("O menor valor é: %d\n", menorValor);
     printf("Na posição %d do vetor", posicao+1);
     
