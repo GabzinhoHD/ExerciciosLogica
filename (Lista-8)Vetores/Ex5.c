@@ -16,7 +16,8 @@ int main()
         
         }while(vetorV[i] < 0);
     }
-    
+
+    printf("\n---RESULTADO---\n");
     printf("O maior valor é: %d\n", maiorValor);
     printf("Na posição %d do vetor", posicao+1);
     
