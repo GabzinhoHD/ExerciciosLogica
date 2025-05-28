@@ -22,7 +22,6 @@ int main()
     printf("\n---RESULTADO---\n");
     printf("O maior valor é: %d\n", maiorValor);
     printf("Na %dº posição do vetor", posicao+1);
-    
-    
+
     return 0;
 }
