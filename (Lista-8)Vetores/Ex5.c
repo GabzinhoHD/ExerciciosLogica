@@ -7,13 +7,14 @@ int main()
     printf("---DETERMINADOR DO MAIOR VALOR---\n");
     for(i = 0; i < tam; i++){
         do{
-            printf("Informe o %dº valor: ", i+1);
+            printf("Informe o %dº valor(positivo): ", i+1);
             scanf("%d", &vetorV[i]);
             
             if(vetorV[i] > maiorValor){
                 maiorValor = vetorV[i];
                 posicao = i;
             }
+            if(vetorV[i] < 0) printf("Entrada Invalida!!\n");
         
         }while(vetorV[i] < 0);
     }
