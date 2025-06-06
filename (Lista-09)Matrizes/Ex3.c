@@ -9,31 +9,31 @@ int main()
     
     do{
         printf("Informe a quantidade de linhas: ");
-        scanf("%d", &i);
+        scanf("%d", &m);
         printf("Informe a quantidade de colunas: ");
-        scanf("%d", &j);
-        if(i <= 0 && j <= 0) printf("Impossivel forma uma matriz\n\n");
+        scanf("%d", &n);
+        if(m <= 0 && n <= 0) printf("Impossivel forma uma matriz\n\n");
         
-    }while(i <= 0 && j <= 0);
+    }while(m <= 0 && n <= 0);
 
     /* Entrada dos valores das matrizes */
     printf("\n---MATRIZ A---\n");
-    for(m = 0; m < i; m++) for(n = 0; n < j; n++){
-        printf("\nlinha[%d], coluna[%d]\n", m, n);
+    for(i = 0; i < m; i++) for(j = 0; j < n; j++){
+        printf("\nlinha[%d], coluna[%d]\n", i, j);
         printf("Informe valor: ");
-        scanf("%d", &matrizA[m][n]);
+        scanf("%d", &matrizA[i][j]);
     }
     
     printf("\n---MATRIZ B---\n");
-    for(m = 0; m < i; m++) for(n = 0; n < j; n++){
-        printf("\nlinha[%d], coluna[%d]\n", m, n);
+    for(i = 0; i < m; i++) for(j = 0; j < n; j++){
+        printf("\nlinha[%d], coluna[%d]\n", i, j);
         printf("Informe valor: ");
-        scanf("%d", &matrizB[m][n]);
+        scanf("%d", &matrizB[i][j]);
     }
 
     /* Soma das matrizes */
-    for(m = 0, l = 0; m < i; m++, l++) for(n = 0, c = 0; n < j; n++, c++){
-       matrizC[l][c] = matrizA[m][n] + matrizB[m][n];
+    for(i = 0, l = 0; i < m; i++, l++) for(j = 0, c = 0; j < n; i++, c++){
+       matrizC[l][c] = matrizA[i][j] + matrizB[i][j];
     }
     
     printf("\n---RESULTADO---\n");
