@@ -33,7 +33,7 @@ int main()
     printf("\nMATRIZ NORMAL:\n");
     for(int i = 0; i < m; i++){
         for(int j = 0; j < n; j++){
-            printf("%d ", matrizA[i][j]);
+            printf("[%d] ", matrizA[i][j]);
         }
         printf("\n");
     }
@@ -41,7 +41,7 @@ int main()
     printf("\nMATRIZ TRANSPOSTA:\n");
      for(int i = 0; i < n; i++) {
         for(int j = 0; j < m; j++) {
-            printf("%d ", matrizT[i][j]);
+            printf("[%d] ", matrizT[i][j]);
         }
         printf("\n");
     }
