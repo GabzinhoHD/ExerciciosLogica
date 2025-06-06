@@ -24,23 +24,23 @@ int main()
     }
     
     /* transposição da matriz */
-      for(int i = 0; i < m; i++) for(int j = 0; j < n; j++){
+      for(i = 0; i < m; i++) for( j = 0; j < n; j++){
         matrizT[j][i] = matrizA[i][j];
     }
     
    
     printf("\n---RESULTADO---\n");
     printf("\nMATRIZ NORMAL:\n");
-    for(int i = 0; i < m; i++){
-        for(int j = 0; j < n; j++){
+    for(i = 0; i < m; i++){
+        for(j = 0; j < n; j++){
             printf("[%d]\t", matrizA[i][j]);
         }
         printf("\n");
     }
     
     printf("\nMATRIZ TRANSPOSTA:\n");
-     for(int i = 0; i < n; i++) {
-        for(int j = 0; j < m; j++) {
+     for(i = 0; i < n; i++) {
+        for(j = 0; j < m; j++) {
             printf("[%d]\t", matrizT[i][j]);
         }
         printf("\n");
