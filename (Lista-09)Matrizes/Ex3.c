@@ -19,7 +19,7 @@ int main()
     /* Entrada dos valores das matrizes */
     printf("\nMATRIZ A:\n");
     for(i = 0; i < m; i++) for(j = 0; j < n; j++){
-        printf("\nlinha[%d], coluna[%d]\n", i, j);
+        printf("\nlinha[%d], coluna[%d]\n", i+1, j+1);
         printf("Informe valor: ");
         scanf("%d", &matrizA[i][j]);
     }
