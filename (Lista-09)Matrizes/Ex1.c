@@ -6,6 +6,7 @@ int main()
     int valorMaior, valorMenor, linMaior, colMaior, linMenor, colMenor;
     
     printf("---MAIOR E MENOR VALOR (MATRIZ-8x8)---\n");
+    printf("\n---MATRIZ---\n");
     for(i = 0; i < 8; i++) for(j = 0; j < 8; j++){
         printf("\nlinha[%d], coluna[%d]\n", i, j);
         printf("Informe valor: ");
