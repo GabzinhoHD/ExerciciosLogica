@@ -17,14 +17,14 @@ int main()
     }while(m <= 0 && n <= 0);
 
     /* Entrada dos valores das matrizes */
-    printf("\n---MATRIZ A---\n");
+    printf("\nMATRIZ A:\n");
     for(i = 0; i < m; i++) for(j = 0; j < n; j++){
         printf("\nlinha[%d], coluna[%d]\n", i, j);
         printf("Informe valor: ");
         scanf("%d", &matrizA[i][j]);
     }
     
-    printf("\n---MATRIZ B---\n");
+    printf("\nMATRIZ B:\n");
     for(i = 0; i < m; i++) for(j = 0; j < n; j++){
         printf("\nlinha[%d], coluna[%d]\n", i, j);
         printf("Informe valor: ");
@@ -37,9 +37,12 @@ int main()
     }
     
     printf("\n---RESULTADO---\n");
-    printf("---MATRIZ C---\n");
-    for(l = 0; l < i; l++) for(c = 0; c < j; c++){
-        printf("lin[%d], col[%d] = [%d]\n", l, c, matrizC[l][c]);
+    printf("MATRIZ C:\n");
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < m; j++) {
+            printf("%d ", matrizC[i][j]);
+        }
+        printf("\n");
     }
     
     return 0;
