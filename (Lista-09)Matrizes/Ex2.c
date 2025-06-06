@@ -6,6 +6,7 @@ int main()
     float matriz[3][3];
     
     printf("---DETERMINADOR DA LINHA(MATRIZ-3x3)---\n");
+    printf("\n---MATRIZ---\n");
     for(i = 0; i < 3; i++) for(j = 0; j < 3; j++){
         printf("\nlinha[%d], coluna[%d]\n", i, j);
         printf("Informe valor: ");
