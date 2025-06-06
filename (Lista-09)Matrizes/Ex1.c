@@ -8,7 +8,7 @@ int main()
     printf("---MAIOR E MENOR VALOR (MATRIZ-8x8)---\n");
     printf("\nMATRIZ:\n");
     for(i = 0; i < 8; i++) for(j = 0; j < 8; j++){
-        printf("\nlinha[%d], coluna[%d]\n", i, j);
+        printf("\nlinha[%d], coluna[%d]\n", i+1, j+1);
         printf("Informe valor: ");
         scanf("%d", &matriz[i][j]);
         
