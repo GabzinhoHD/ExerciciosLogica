@@ -8,7 +8,7 @@ int main()
     printf("---DETERMINADOR DA LINHA(MATRIZ-3x3)---\n");
     printf("\nMATRIZ:\n");
     for(i = 0; i < 3; i++) for(j = 0; j < 3; j++){
-        printf("\nlinha[%d], coluna[%d]\n", i, j);
+        printf("\nlinha[%d], coluna[%d]\n", i+1, j+1);
         printf("Informe valor: ");
         scanf("%f", &matriz[i][j]);
     }
