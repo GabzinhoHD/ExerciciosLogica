@@ -4,7 +4,7 @@
 int main()
 {
     int i;
-    char string1[4] = "lua", string2[6] = "cheia";
+    char string1[100] = "lua", string2[100] = "cheia";
     
     printf("---CONCATENAÇÃO DE DUAS STRINGS---\n");
     
