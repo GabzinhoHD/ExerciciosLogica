@@ -7,7 +7,7 @@ int main()
     
     printf("---CONCATENAÇÃO DE STRINGS(2º na 1º)---\n");
 
-    printf("\nEntrada:\n");
+    printf("\nENTRADA:\n");
     printf("String1: %s  String2: %s\n", string1, string2);
     strcat(string1, string2);
     
