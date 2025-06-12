@@ -8,6 +8,7 @@ int main()
     
     printf("---CONCATENAÇÃO DE STRINGS---\n");
     
+    printf("\nEntrada:\n");
     printf("Informe a primeira String: ");
     fgets(string1, sizeof(string1), stdin);
     tam[0] = strlen(string1) - 1;
