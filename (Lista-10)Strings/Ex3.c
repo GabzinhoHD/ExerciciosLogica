@@ -8,6 +8,7 @@ int main()
     
     printf("---CONTADOR DE O's---\n");
     
+    printf("\nEntrada:\n");
     printf("Digite sua String: ");
     fgets(string, sizeof(string), stdin);
     
