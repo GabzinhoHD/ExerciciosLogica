@@ -3,7 +3,7 @@
 
 int main()
 {
-    char string1[100] = "lua", string2[100] = "cheia";
+    char string1[40] = "lua", string2[40] = "cheia";
     
     printf("---CONCATENAÇÃO DE STRINGS(2º na 1º)---\n");
 
