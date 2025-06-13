@@ -4,7 +4,7 @@
 
 int main()
 {
-    int i, j, tam = 0;
+    int i, j;
     char string[100], invertida[100];
     
     printf("---INVERSOR DE CARACTERE---\n");
@@ -14,9 +14,7 @@ int main()
     fgets(string, sizeof(string), stdin);
     string[strlen(string)-1] = '\0';
     
-    tam = strlen(string) - 1;
-    
-    for(i = 0, j = tam; i < strlen(string); i++, j--){
+    for(i = 0, j = strlen(string) - 1 ; i < strlen(string); i++, j--){
         invertida[j] = string[i];
     }
     
