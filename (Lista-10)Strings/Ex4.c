@@ -10,7 +10,7 @@ int main()
     printf("---CONTADOR DE CARACTERE---\n");
     
     printf("\nENTRADA:\n");
-    printf("Digite sua String: ");
+    printf("Digite seu Texto: ");
     fgets(string, sizeof(string), stdin);
     
     printf("Informe o caractere a ser contado: ");
@@ -23,7 +23,7 @@ int main()
     }
     
     printf("\n---RESULTADO---\n");
-    printf("String: %s", string);
+    printf("Texto: %s", string);
     printf("Nº de %c's: %d", caractere, qtd);
     
     return 0;
