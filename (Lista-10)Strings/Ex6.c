@@ -10,8 +10,9 @@ int main()
     printf("---INVERSOR DE CARACTERE---\n");
     
     printf("\nENTRADA:\n");
-    printf("Digite sua String: ");
+    printf("Digite seu Texto: ");
     fgets(string, sizeof(string), stdin);
+    string[strlen(string)-1] = '\0';
     
     tam = strlen(string) - 1;
     
