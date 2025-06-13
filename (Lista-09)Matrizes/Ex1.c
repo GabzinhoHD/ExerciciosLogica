@@ -34,10 +34,10 @@ int main()
     
     printf("\n---RESULTADO---\n\n");
     printf("Menor valor: [%d]\n", valorMenor);
-    printf("Posição: lin[%d], col[%d]\n\n", linMenor, colMenor);
+    printf("Posição: lin[%d], col[%d]\n\n", linMenor+1, colMenor+1);
     
     printf("Maior valor: [%d]\n", valorMaior);
-    printf("Posição: lin[%d], col[%d]\n", linMaior, colMaior);
+    printf("Posição: lin[%d], col[%d]\n", linMaior+1, colMaior+1);
 
     return 0;
 }
