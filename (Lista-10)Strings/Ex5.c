@@ -10,7 +10,7 @@ int main()
     printf("---MAIUSCULIZAÇÃO---\n");
     
     printf("\nENTRADA:\n");
-    printf("Digite sua String: ");
+    printf("Digite seu Texto: ");
     fgets(string, sizeof(string), stdin);
     
     for(i = 0; i < strlen(string); i++){
