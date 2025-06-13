@@ -9,27 +9,29 @@ int main()
     printf("---CONCATENAÇÃO DE STRINGS---\n");
     
     printf("\nENTRADA:\n");
-    printf("Informe a primeira String: ");
+    printf("Informe a 1ª String: ");
     fgets(string1, sizeof(string1), stdin);
-    tam[0] = strlen(string1) - 1;
+    string1[strlen(string1) - 1] = '\0';
+    tam[0] = strlen(string1);
     
-    printf("Informe a segunda String: ");
+    printf("Informe a 2ª String: ");
     fgets(string2, sizeof(string2), stdin);
-    tam[1] = strlen(string2) - 1;
+    string2[strlen(string2) - 1] = '\0';
+    tam[1] = strlen(string2);
     
     /* Concatenação com espaço entre as strings */
     strcpy(string3, string1);
     strcat(string3, " ");
     strcat(string3, string2);
-    tam[2] = strlen(string3) - 1;
+    tam[2] = strlen(string3);
     
     printf("\n---RESULTADO---\n");
-    printf("String1: %s\n", string1);
-    printf("String2: %s\n", string2);
-    printf("String3: %s\n", string3);
+    printf("String 1: %s\n", string1);
+    printf("String 2: %s\n", string2);
+    printf("String 3: %s\n", string3);
     printf("Tamanhos:");
-    for(i = 1; i <= 3; i++){
-        printf("[%d] ", tam[i-1]);
+    for(i = 0; i < 3; i++){
+        printf(" [%d] ", tam[i]);
     }
     
     return 0;
