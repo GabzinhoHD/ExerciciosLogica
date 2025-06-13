@@ -9,7 +9,7 @@ int main()
     printf("---CONTADOR DE O's---\n");
     
     printf("\nENTRADA:\n");
-    printf("Digite sua String: ");
+    printf("Digite seu Texto: ");
     fgets(string, sizeof(string), stdin);
     
     for(i = 0; i < strlen(string); i++){
@@ -19,7 +19,7 @@ int main()
     }
     
     printf("\n---RESULTADO---\n");
-    printf("String: %s", string);
+    printf("Texto: %s", string);
     printf("Nº de O's: %d", qtd);
     
     return 0;
