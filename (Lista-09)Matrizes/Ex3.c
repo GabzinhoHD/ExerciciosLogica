@@ -2,7 +2,7 @@
 
 int main()
 {
-    int i, j, m, n, l, c, tam = 100;
+    int i, j, m, n, tam = 100;
     int matrizA[tam][tam], matrizB[tam][tam], matrizC[tam][tam];
     
     printf("---SOMADOR DE DUAS MATRIZES---\n");
@@ -26,20 +26,20 @@ int main()
     
     printf("\nMATRIZ B:\n");
     for(i = 0; i < m; i++) for(j = 0; j < n; j++){
-        printf("\nlinha[%d], coluna[%d]\n", i, j);
+        printf("\nlinha[%d], coluna[%d]\n", i+1, j+1);
         printf("Informe valor: ");
         scanf("%d", &matrizB[i][j]);
     }
 
     /* Soma das matrizes */
-    for(i = 0, l = 0; i < m; i++, l++) for(j = 0, c = 0; j < n; i++, c++){
-       matrizC[l][c] = matrizA[i][j] + matrizB[i][j];
+    for(i = 0; i < m; i++) for(j = 0; j < n; j++){
+       matrizC[i][j] = matrizA[i][j] + matrizB[i][j];
     }
     
     printf("\n---RESULTADO---\n");
     printf("MATRIZ C:\n");
-    for(i = 0; i < n; i++) {
-        for(j = 0; j < m; j++) {
+    for(i = 0; i < m; i++) {
+        for(j = 0; j < n; j++) {
             printf("[%d] ", matrizC[i][j]);
         }
         printf("\n");
