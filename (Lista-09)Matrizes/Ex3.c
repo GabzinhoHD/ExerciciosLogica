@@ -40,7 +40,7 @@ int main()
     printf("MATRIZ C:\n");
     for(i = 0; i < m; i++) {
         for(j = 0; j < n; j++) {
-            printf("[%d] ", matrizC[i][j]);
+            printf("[%d]\t", matrizC[i][j]);
         }
         printf("\n");
     }
