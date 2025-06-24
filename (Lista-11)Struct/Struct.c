@@ -5,7 +5,7 @@
 /*
 NOTA: Você perceberá que o código possui muitas validações
 para as entradas de dados (E por isso o código pode ter ficado maior do que deveria).
-Acho que passei um pouquinho em relação às validações :)
+Acho que exagerei um pouquinho em relação às validações :)
 */
 
 int main()
