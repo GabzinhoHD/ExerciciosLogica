@@ -14,7 +14,7 @@ int main()
     int opcao, jaCadastrou = 0, alterar, excluir, encontrou = 0, especifico;
     
     struct TPessoa{
-        int codigo, idade;// Inteiros
+        int codigo, idade; // Inteiros
         char nome[100], sexo; // Caracteres
         float altura, peso;  // Valor Real
     };
