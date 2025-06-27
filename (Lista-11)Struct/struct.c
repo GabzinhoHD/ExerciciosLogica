@@ -15,7 +15,7 @@ int main()
     
     struct TPessoa{
         int codigo, idade;// Inteiros
-        char nome[tam], sexo; // Caracteres
+        char nome[100], sexo; // Caracteres
         float altura, peso;  // Valor Real
     };
     struct TPessoa cadastro[tam];
