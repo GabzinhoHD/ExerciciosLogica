@@ -14,12 +14,9 @@ int main()
     int opcao, jaCadastrou = 0, alterar, excluir, encontrou = 0, especifico;
     
     struct TPessoa{
-        // Inteiros
-        int codigo, idade;
-        // Caracteres
-        char nome[tam], sexo;
-        // Valor Real
-        float altura, peso;
+        int codigo, idade;// Inteiros
+        char nome[tam], sexo; // Caracteres
+        float altura, peso;  // Valor Real
     };
     struct TPessoa cadastro[tam];
     
@@ -33,14 +30,13 @@ int main()
         printf("[4] Mostrar cadastro especifico\n");
         printf("[5] Mostrar todos os cadastro\n");
         printf("[0] Sair\n");
-        /* Entrada da opção */
-        printf("\nDigite o nº do que deseja fazer: ");
+        
+        printf("\nDigite o nº do que deseja fazer: "); /* Entrada da opção */
         scanf("%d", &opcao);
         
         /* Validação da opção */
         if(opcao > 0 && opcao <= 5){
-            /* Validação do primeiro cadastro*/
-            if(opcao != 1 && jaCadastrou == 0){
+            if(opcao != 1 && jaCadastrou == 0){ /* Validação do primeiro cadastro*/
                 printf("\nNão houve nenhum cadastro ainda!!\n");
                 continue;
             }
@@ -58,9 +54,8 @@ int main()
                             scanf("%d", &cadastro[i].codigo);
                         }while(cadastro[i].codigo < 0);
                         
-                        /* Apenas o campo nome não tem Validação porque isso e impossivel!! */
                         getchar();  // Apaga o ENTER deixado pelo scanf
-                        printf("| Nome: ");
+                        printf("| Nome: "); /* Apenas o campo nome não tem Validação porque isso e impossivel!! */
                         fgets(cadastro[i].nome, sizeof(cadastro[i].nome), stdin);
         
                         do{
